@@ -75,11 +75,6 @@ class Palasis_Inheritwidgets_Model_Core_Resource_Layout
       if ($_package != null && $_theme != null) {
         $allPackages[$_package][$_theme] = true;
       }
-      //possible overriding facility can be used here, ie. to change true values above to false.
-      //but I cannot think of a scenario where I would need this.
-      //  if (method_exists($this, 'overrideParentInclusion')) {
-      //    $allPackages[$_package][$_theme] = $this->overrideParentInclusion($_package,$_theme);
-      //  }
     }
 
 
@@ -124,26 +119,6 @@ class Palasis_Inheritwidgets_Model_Core_Resource_Layout
         $result .= join('', $readAdapter->fetchCol($select, $bind));
       }
     }
-
-    /*
-     * debuging stuff
-     * **** */
-
-    Mage::helper('firegento/log')->debug("\n\n\n\n");
-    Mage::helper('firegento/log')->debug(PHP_EOL . 'REQUEST_URI: ' . $_SERVER['REQUEST_URI'] . PHP_EOL . ' $bind:');
-    Mage::helper('firegento/log')->debug($bind);
-    Mage::helper('firegento/log')->debug('$allPackages');
-    Mage::helper('firegento/log')->debug($allPackages);
-
-    Mage::helper('firegento/log')->debug('$select->__toString()');
-    Mage::helper('firegento/log')->debug($select->__toString());
-
-    Mage::helper('firegento/log')->debug('$result');
-    Mage::helper('firegento/log')->debug($result);
-
-    Mage::helper('firegento/log')->debug('$readAdapter->fetchCol($select, $bind)');
-    Mage::helper('firegento/log')->debug($readAdapter->fetchCol($select, $bind));
-
     return $result;
   }
 
