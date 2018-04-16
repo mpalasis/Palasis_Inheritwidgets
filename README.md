@@ -14,6 +14,8 @@ For sorting to be obeyed, put widgets in only one of the parent themes and nowhe
 
 ### example ###
 
+(package/theme names don't matter)
+
     rwd / default
     \_ rwd / palasis <-- all widgets live here
        \_ rwd / palasis-green
