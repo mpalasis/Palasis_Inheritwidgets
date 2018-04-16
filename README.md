@@ -4,8 +4,6 @@ This makes themes inherit widgets from their parents
 
 for Magento 1.9x
 
-This makes child themes inherit widgets from their parents
-
 Original post of the issue on Stackexchange (by me):  [Inherit Widgets from Theme Parent](https://magento.stackexchange.com/questions/221255/inherit-widgets-from-theme-parent)
 
 The purpose of this module is to allow child themes to inherit widgets from their parents. 
