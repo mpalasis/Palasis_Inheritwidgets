@@ -12,7 +12,7 @@ Widget sort order accross multple themes is not obeyed.
 
 For sorting to be obeyed, put widgets in only one of the parent themes and nowhere else.
 
-example:
+### example ###
 
     rwd / default
     \_ rwd / palasis <-- all widgets live here
@@ -31,3 +31,7 @@ eg. for `rwd/palasis-green` put xml file at: `design/frontend/rwd/palasis-green/
     <parent>rwd/palasis</parent>
 </theme>
 ```
+
+### Installation ###
+
+Just drag and drop `app` into your Magento root.
